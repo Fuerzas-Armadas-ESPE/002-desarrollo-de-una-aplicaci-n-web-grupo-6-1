@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Pawsome Friends</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container-hero">
+				<div class="container hero">
+					<div class="customer-support">
+						<i class="fa-solid fa-headset"></i>
+						<div class="content-customer-support">
+							<span class="text">Atención</span>
+							<span class="number">123-456-7890</span>
+						</div>
+					</div>
+
+					<div class="container-logo">
+						<i class="fa-solid fa-dog"></i>
+						<h1 class="logo"><a href="#inicio">Pawsome Friends</a></h1>
+					</div>
+					<div >
+					</div>
+				</div>
+			</div>
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="#inicio">Inicio</a></li>
+						<li><a href="#nosotros">Sobre Nosotros</a></li>
+						<li><a href="#servicios">Servicios</a></li>
+						<li><a href="#centros">Centros</a></li>
+						<li><a href="#adopcion">Adopción</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contacto">Contacto</a></li>
+					</ul>
+
+					<form class="search-form">
+						<input type="search" placeholder="Buscar..." />
+						<button class="btn-search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>
+				</nav>
+			</div>
+		</header>
+
+		<section class="banner">
+			<div class="content-banner" id="inicio">
+				<p>Adopta amor</p>
+				<h2>Juntos por una<br />Segunda Oportunidad</h2>
+				<a href="#adopcion">Adoptar ahora</a>
+			</div>
+		</section>
+
+		<main class="main-content">
+			<h1 class="heading-1" id="nosotros">Sobre nosotros</h1>
+			<section class="container container_about_us">
+				<p>Somos una organización dedicada a la protección y adopción de mascotas. Nuestra misión es encontrar hogares amorosos para animales en situación de abandono, y promover la educación sobre el cuidado responsable de las mascotas.</p>
+				<img src="img/our_team.jpg" alt="Our Team">
+				<p>Desde nuestro inicio en 2005, hemos ayudado a más de 10,000 animales a encontrar un nuevo hogar y continuamos trabajando arduamente para mejorar la vida de muchos más.</p>
+			</section>
+			<h1 class="heading-1" id="servicios">Servicios</h1>
+			<section class="container container-features" >
+				<div class="card-feature">
+					<i class="fa-solid fa-paw"></i>
+					<div class="feature-content">
+						<span>Adopción y Fomento</span>
+						<p>Organizamos y gestionamos el proceso de adopción</p>
+					</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-stethoscope"></i>
+					<div class="feature-content">
+						<span>Atención Veterinaria y Esterilización</span>
+						<p>Servicios veterinarios básicos y esenciales</p>
+					</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-chalkboard-teacher"></i>
+					<div class="feature-content">
+						<span>Educación y Capacitación</span>
+						<p>Talleres y recursos educativos para los adoptantes</p>
+					</div>
+				</div>
+				<div class="card-feature">
+					<i class="fa-solid fa-hand-holding-heart"></i>
+					<div class="feature-content">
+						<span>Programas de Rehabilitación y Resocialización</span>
+						<p>Programas para ayudar a perros que han sido maltratados, abandonados o tienen problemas de comportamiento</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="container top-categories" id="centros">
+				<h1 class="heading-1">Centros de Adopción</h1>
+				<div class="container-categories">
+					<div class="card-category category-norte">
+						<p>Quito Norte</p>
+						<span>Ver más</span>
+					</div>
+					<div class="card-category category-cumbaya">
+						<p>Cumabayá</p>
+						<span>Ver más</span>
+					</div>
+					<div class="card-category category-valle">
+						<p>Valles</p>
+						<span>Ver más</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="container pets">
+				<h1 class="heading-1" id="adopcion">Adopción</h1>
+			
+				<div class="container-options">
+					<span id="adultos" class="active">Adultos</span>
+					<span id="jovenes">Jóvenes</span>
+					<span id="cachorros">Cachorros</span>
+				</div>
+			
+				<div class="container-pets" id="container-pets">
+					<!-- Tarjetas de mascotas se cargarán aquí -->
+				</div>
+				<script src="function.js"></script>
+			</section>
+			
+			<section class="gallery">
+				<img
+					src="img/gallery1.jpg"
+					alt="Gallery Img1"
+					class="gallery-img-1"
+				/><img
+					src="img/gallery2.jpg"
+					alt="Gallery Img2"
+					class="gallery-img-2"
+				/><img
+					src="img/gallery3.jpg"
+					alt="Gallery Img3"
+					class="gallery-img-3"
+				/><img
+					src="img/gallery4.jpg"
+					alt="Gallery Img4"
+					class="gallery-img-4"
+				/><img
+					src="img/gallery5.jpg"
+					alt="Gallery Img5"
+					class="gallery-img-5"
+				/>
+			</section>
+			<section class="container blogs" id="blog">
+				<h1 class="heading-1">Lo último en Pawsome Friends</h1>
+				<div class="container-blogs">
+					<div class="card-blog">
+						<div class="container-img">
+							<img src="img/C-Piper.png" alt="Recién llegada" />
+							<div class="button-group-blog">
+								<span>
+									<a href="#adopcion">
+										<i class="fa-solid fa-magnifying-glass"></i>
+									</a>
+								</span>
+							</div>
+						</div>
+						<div class="content-blog">
+							<h3>Recién LLegada</h3>
+							<span>16 de mayo, 2024</span>
+							<p>
+								Piper, una perrita de 4 meses, fue rescatada de un terreno baldío por la Fundación
+								después de ser encontrada en condiciones deplorables bajo la lluvia. Tras ser alertados
+								por un transeúnte, fue llevada a uno de nuestros refugios donde recibió atención médica, 
+								amor y cuidado, recuperándose de su estado de desnutrición y deshidratación. 
+							</p>
+						</div>
+					</div>
+					<div class="card-blog">
+						<div class="container-img">
+							<img src="img/Adp-Batman.png" alt="Imagen Blog 2" />
+						</div>
+						<div class="content-blog">
+							<h3>Recién Adoptado</h3>
+							<span>15 de mayo, 2024</span>
+							<p>
+								Batman, un perrito de 1 año fue adoptado por la familia Arias.
+								Exponemos nuestro agradecimiento con la familia por brindarle un hogar
+								con mucho amor a nuestro Peludito.
+
+							</p> <br><br><br><br>
+						</div>
+					</div>
+					<div class="card-blog">
+						<div class="container-img">
+							<img src="img/Adp-Minion.png" alt="Imagen Blog 3" />
+						</div>
+						<div class="content-blog">
+							<h3>Recién Adoptado</h3>
+							<span>10 de mayo, 2024</span>
+							<p>
+								Tras una larga espera de 5 meses, Minion un cachorro de 6 meses
+								por fin ha encontrado una familia que lo amará incondicionalmente.
+								Expresamos nuestro agradecimiento a la familia León por darle la Oportunidad
+								de vivir una vida feliz.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<h1 class="heading-1" id="contacto">Contacto</h1>
+			<section class="container container-contact">
+				<div class="contact-form">
+					<h2>Envíanos un mensaje</h2>
+					<form action="#" method="POST">
+						<label for="name">Nombre:</label>
+						<input type="text" id="name" name="name" required>
+						<label for="email">Correo electrónico:</label>
+						<input type="email" id="email" name="email" required>
+						<label for="message">Mensaje:</label>
+						<textarea id="message" name="message" required></textarea>
+						<button type="submit">Enviar</button>
+					</form>
+				</div>
+				
+				<div class="contact-image">
+					<img src="img/contact_us.png" alt="Imagen de contacto">
+				</div>
+			</section>
+
+		<footer class="footer">
+			<div class="container container-footer">
+				<div class="menu-footer">
+					<div class="contact-info">
+						<p class="title-footer">Información de Contacto</p>
+						<ul>
+							<li>
+								Dirección: 71 Pennington Lane Vernon Rockville, CT
+								06066
+							</li>
+							<li>Teléfono: 123-456-7890</li>	
+							<li>EmaiL: pawsomefriends@gmail.com</li>
+						</ul>
+						<div class="social-icons">
+							<span class="facebook">
+								<i class="fa-brands fa-facebook-f"></i>
+							</span>
+							<span class="twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</span>
+							<span class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</span>
+						</div>
+					</div>
+
+					<div class="information">
+						<p class="title-footer">Información</p>
+						<ul>
+							<li><a href="#">Acerca de Nosotros</a></li>
+							<li><a href="#">Atención personalizada</a></li>
+							<li><a href="#">Politicas de Privacidad</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
+							<li><a href="#">Contactános</a></li>
+						</ul>
+					</div>
+
+				<div class="copyright">
+					<p>
+						Desarrollado por Arias, Carrera & León &copy; 2024
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
