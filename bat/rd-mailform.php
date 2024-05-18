@@ -151,12 +151,14 @@ try {
     $mail->MsgHTML($template);
     $mail->send();
 
-    die('MF000');
+echo 'Mensaje enviado. <a href="../index.html">Go to Index</a>';
+    die('Gracias');
 } catch (phpmailerException $e) {
+    echo 'Failed to send email. <a href="../index.html">Go to Index</a>';
     die('MF254');
 } catch (Exception $e) {
-
     var_dump($e);
-
+    echo 'An error occurred. <a href="../index.html">Go to Index</a>';
     die('MF255');
 }
+?>
