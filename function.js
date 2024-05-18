@@ -69,3 +69,58 @@ options.forEach(option => {
 
 // Load default category (adultos) on page load
 loadPets('adultos');
+
+//Buscador de contenido
+//Declarando variables
+search_form = document.getElementById('search-form');
+search = document.getElementById('search');
+box_search = document.getElementById('box-search');
+
+//Función para mostrar el buscador
+function show_search(){
+    box_search.style.display = 'block';
+    search_form.style.display = 'none';
+    search.focus();
+
+}
+
+//Función para ocultar el buscador
+function hide_search(){
+    box_search.style.display = 'none';
+    search_form.style.display = 'block';
+    search.value = '';
+
+}
+
+
+//creando filtro de busqueda
+document.getElementById('search').addEventListener('keyup', buscador_interno);
+function buscador_interno(){
+    filter = search.value.toUpperCase();
+    li = box_search.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++){
+        a = li[i].getElementsByTagName('a')[0];
+        textValue = a.textContent || a.innerText;
+
+        if(textValue.toUpperCase().indexOf(filter) > -1){
+            li[i].style.display = '';
+            box_search.style.display = 'block';
+            if(search.value === ''){
+                box_search.style.display = 'none';
+            }
+        }else{
+            li[i].style.display = 'none';
+        }
+    }
+}
+
+
+
+const adoptButton = document.querySelectorAll('.adopt-button');
+adoptButton.forEach(button => {
+    button.addEventListener('click', () => {
+        button.classList.toggle('active');
+    });
+});
+

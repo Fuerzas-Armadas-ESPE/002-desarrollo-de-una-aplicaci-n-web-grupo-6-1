@@ -33,23 +33,54 @@
 
 			<div class="container-navbar">
 				<nav class="navbar container">
-					<i class="fa-solid fa-bars"></i>
+					<label class="fa-solid fa-bars" for="menuh"></label>
+					<input type="checkbox" name="" id="menuh" class="menuh">
 					<ul class="menu">
-						<li><a href="#inicio">Inicio</a></li>
-						<li><a href="#nosotros">Sobre Nosotros</a></li>
-						<li><a href="#servicios">Servicios</a></li>
-						<li><a href="#centros">Centros</a></li>
-						<li><a href="#adopcion">Adopción</a></li>
-						<li><a href="#blog">Blog</a></li>
-						<li><a href="#contacto">Contacto</a></li>
+						<li class="li_links"><a href="#inicio" class="link">Inicio</a></li>
+						<li class="li_links"><a href="#nosotros" class="link">Sobre Nosotros</a></li>
+						<li class="li_links"><a href="#servicios" class="link">Servicios</a></li>
+						<li class="li_links"><a href="#centros" class="link">Centros</a></li>
+						<li class="li_links"><a href="#adopcion" class="link">Adopción</a></li>
+						<li class="li_links"><a href="#blog" class="link">Blog</a></li>
+						<li class="li_links"><a href="#contacto" class="link">Contacto</a></li>
 					</ul>
 
 					<form class="search-form">
-						<input type="search" placeholder="Buscar..." />
+						<input type="search" placeholder="Buscar..." id="search" name="search" />
 						<button class="btn-search">
 							<i class="fa-solid fa-magnifying-glass"></i>
 						</button>
 					</form>
+
+					<ul id="box-search">
+						<li><a href="#adopcion"><i class="fas fa-search"></i>Adopción</a></li>
+						<li><a href="#centros"><i class="fas fa-search"></i>Centros</a></li>
+						<li><a href="#blog"><i class="fas fa-search"></i>Blog</a></li>
+						<li><a href="#contacto"><i class="fas fa-search"></i>Contacto</a></li>
+						<li><a href="#adultos"><i class="fas fa-search"></i>Perros Adultos</a></li>
+						<li><a href="#jovenes"><i class="fas fa-search"></i>Perros Jóvenes</a></li>
+						<li><a href="#cachorros"><i class="fas fa-search"></i>Perros Cachorros</a></li>
+						<!--
+						<li><a href="#"><i class="fas fa-search"></i>Brownie</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Bobby</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Bruno</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Leo</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Ben</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Cookie</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Elvys</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Luna</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Princess</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Rex</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Teo</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Axel</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Betty</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Colin</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Honguito</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Kiko</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Lexi</a></li>
+						<li><a href="#"><i class="fas fa-search"></i>Piper</a></li>
+						 -->
+					</ul>
 				</nav>
 			</div>
 		</header>
@@ -131,6 +162,8 @@
 				<div class="container-pets" id="container-pets">
 					<!-- Tarjetas de mascotas se cargarán aquí -->
 				</div>
+
+				
 				<script src="function.js"></script>
 			</section>
 			
@@ -264,11 +297,11 @@
 					<div class="information">
 						<p class="title-footer">Información</p>
 						<ul>
-							<li><a href="#">Acerca de Nosotros</a></li>
-							<li><a href="#">Atención personalizada</a></li>
+							<li><a href="#nosotros">Acerca de Nosotros</a></li>
+							<li><a href="#servicios">Atención personalizada</a></li>
 							<li><a href="#">Politicas de Privacidad</a></li>
 							<li><a href="#">Términos y condiciones</a></li>
-							<li><a href="#">Contactános</a></li>
+							<li><a href="#contacto">Contactános</a></li>
 						</ul>
 					</div>
 
@@ -284,5 +317,6 @@
 			src="https://kit.fontawesome.com/81581fb069.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="function.js"></script>
 	</body>
 </html>
